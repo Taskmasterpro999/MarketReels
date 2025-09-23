@@ -29,6 +29,20 @@
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     }
+    ul {
+      list-style-type: none;   /* 👈 removes bullets */
+      padding: 0;              /* 👈 removes indent */
+      margin-top: 20px;
+      text-align: left;
+      display: inline-block;   /* 👈 keeps it centered */
+    }
+    ul li {
+      margin: 8px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
     footer {
       margin-top: 20px;
       font-size: 14px;
@@ -41,11 +55,11 @@
   
   <div class="container">
     <video controls>
-      <!-- 👇 put your exact filename here -->
       <source src="marketreel_update.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-        <!-- ✅ Today Points -->
+
+    <!-- ✅ Today Points -->
     <ul>
       <li><span>👤</span> Individual profiles</li>
       <li><span>🔍</span> Search is stable</li>
@@ -55,6 +69,7 @@
       <li><span>📩</span> One-to-one chat is now working</li>
       <li><span>☁️</span> CDN integration coming soon</li>
     </ul>
+
     <p style="margin-top: 20px; font-size: 18px; color: #ffccff;">
       🚫📢 No ads, no nonsense — ✅ only business that wants to grow!
     </p>
